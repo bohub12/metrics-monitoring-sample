@@ -11,3 +11,7 @@
 
 - [4. Tracing Monitoring: Spring Boot 3 -- OpenTelemetry -- Grafana Tempo -- Grafana
   ](https://www.youtube.com/watch?v=3NlGb4usCGI&t=258s)
+
+![image](https://github.com/user-attachments/assets/4fb821b1-2548-4a56-b457-5b0059cfc657)
+
+- [5. Logs Aggregation: Spring Boot 3 -- OpenTelemetry -- Loki -- Grafana](https://www.youtube.com/watch?v=UC09F-yGMG4&)
