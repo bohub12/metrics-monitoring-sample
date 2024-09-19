@@ -6,5 +6,8 @@
 
 - [3. Tracing Monitoring: Spring Boot 3 -- OpenTelemetry -- Jaeger -- Zipkin
   ](https://www.youtube.com/watch?v=ducj4uR_ZoE)
+
+![image](https://github.com/user-attachments/assets/014a4137-9698-40fa-88b4-5c7dd9a61044)
+
 - [4. Tracing Monitoring: Spring Boot 3 -- OpenTelemetry -- Grafana Tempo -- Grafana
   ](https://www.youtube.com/watch?v=3NlGb4usCGI&t=258s)

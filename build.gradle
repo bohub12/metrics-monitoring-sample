@@ -26,6 +26,10 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	runtimeOnly 'io.micrometer:micrometer-registry-otlp'
+
+	runtimeOnly 'io.micrometer:micrometer-tracing-bridge-otel'
+	runtimeOnly 'io.opentelemetry:opentelemetry-exporter-otlp'
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
