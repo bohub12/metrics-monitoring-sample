@@ -48,6 +48,14 @@ services:
     ports:
       - "3000:3000"
 
+  loki:
+    container_name: loki
+    image: grafana/loki:latest
+    command:
+      - -config.file=/etc/loki/local-config.yaml
+    ports:
+      - "3100:3100"
+
   jaeger-all-in-one:
     image: jaegertracing/all-in-one:latest
     restart: always

@@ -15,3 +15,6 @@
 ![image](https://github.com/user-attachments/assets/4fb821b1-2548-4a56-b457-5b0059cfc657)
 
 - [5. Logs Aggregation: Spring Boot 3 -- OpenTelemetry -- Loki -- Grafana](https://www.youtube.com/watch?v=UC09F-yGMG4&)
+
+![image](https://github.com/user-attachments/assets/02dcb336-11e1-4b88-94cd-cb60cefe0020)
+ 
