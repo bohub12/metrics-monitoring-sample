@@ -48,6 +48,15 @@ services:
     ports:
       - "3000:3000"
 
+  promtail:
+    container_name: promtail
+    image: grafana/promtail
+    volumes:
+      - ./docker/promtail/promtail.yaml:/etc/promtail/promtail.yaml
+      - ./log:/etc/promtail/log
+    command:
+      - -config.file=/etc/promtail/promtail.yaml
+
   loki:
     container_name: loki
     image: grafana/loki:latest

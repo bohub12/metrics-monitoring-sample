@@ -3,13 +3,27 @@
     <include resource="org/springframework/boot/logging/logback/defaults.xml" />
     <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
 
-    <appender name="OPEN_TELEMETRY" class="io.opentelemetry.instrumentation.logback.appender.v1_0.OpenTelemetryAppender">
-        <captureExperimentalAttributes>true</captureExperimentalAttributes>
-        <captureKeyValuePairAttributes>true</captureKeyValuePairAttributes>
+<!--    <appender name="OPEN_TELEMETRY" class="io.opentelemetry.instrumentation.logback.appender.v1_0.OpenTelemetryAppender">-->
+<!--        <captureExperimentalAttributes>true</captureExperimentalAttributes>-->
+<!--        <captureKeyValuePairAttributes>true</captureKeyValuePairAttributes>-->
+<!--    </appender>-->
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%d{MM-dd HH:mm:ss.SSS}] %highlight(%-5level) [%file:%line] [traceId=%X{traceId} spanId=%X{spanId}] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>/Users/gimbogyu/Documents/Github/study/metrics-monitoring-sample/log/sample.log</file>
+        <encoder>
+            <pattern>[%d{MM-dd HH:mm:ss.SSS}] %highlight(%-5level) [%file:%line] [traceId=%X{traceId} spanId=%X{spanId}] %m%n</pattern>
+        </encoder>
     </appender>
 
     <root level="INFO">
         <appender-ref ref="CONSOLE" />
-        <appender-ref ref="OPEN_TELEMETRY" />
+        <appender-ref ref="FILE" />
+<!--        <appender-ref ref="OPEN_TELEMETRY" />-->
     </root>
 </configuration>
